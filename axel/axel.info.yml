@@ -1,0 +1,12 @@
+name: Axelerant Custom Module
+type: module
+description: "Provides a Custom Key value in Site Information."
+package: Axelerant
+core_version_requirement: ^8.7.7 || ^9
+dependencies:
+  - drupal:rest
+
+# Information added by Drupal.org packaging script on 2021-03-27
+version: '8.x-1.20'
+project: 'axelerant'
+datestamp: 1619960368

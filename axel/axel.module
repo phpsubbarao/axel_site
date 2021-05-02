@@ -1,0 +1,18 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\system\Form\SiteInformationForm;
+
+
+/**
+ * Implements hook_form_alter().
+ */
+
+function axel_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  // Adding custom validation for the welcome page type field.
+  if ($form_id == 'system_site_information_settings' ) {
+    $form['actions']['submit']['#value'] = t('Update Configuration');
+
+  }
+}

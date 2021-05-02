@@ -1,0 +1,5 @@
+services:
+  axel.route_subscriber:
+    class: Drupal\axel\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
